@@ -1,0 +1,37 @@
+.advantages {
+  padding: 70px 0 65px;
+}
+
+.advantages__title {
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.advantages__wrapper {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.advantages__item-title {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 35px 0 20px;
+}
+
+.advantages__item-text {
+  font-size: 14px;
+  width: 265px;
+  display: block;
+}
+
+.advantages__item-link {
+  color: red;
+  font-size: 14px;
+  &:hover {
+    color: red;
+  }
+}
