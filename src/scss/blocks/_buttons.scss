@@ -1,0 +1,14 @@
+.btn {
+  background-color: $btn_color;
+  color: $white-color;
+  border: none;
+  text-transform: uppercase;
+  border-radius: 5px;
+  padding: 7.5px 22px 8px;
+  font-weight: 400;
+  font-size: 12px;
+  transition: 0.2s all;
+  &:active {
+    transform: scale(0.97);
+  }
+}

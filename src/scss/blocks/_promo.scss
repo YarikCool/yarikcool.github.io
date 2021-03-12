@@ -1,0 +1,65 @@
+.promo {
+  background: url(../img/bgs/promo__bg.jpg) center (center/cover) no-repeat;
+  padding: 165px 0 90px;
+  color: $white-color;
+  text-align: right;
+  .container {
+    position: relative;
+  }
+  button {
+    font-size: 16px;
+    padding: 12px 42px;
+  }
+}
+
+.promo__title {
+  font-size: 42px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.promo__subtitle {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 24px;
+  margin-bottom: 221px;
+}
+
+.promo__wrapper {
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+  width: 424px;
+  top: 142px;
+  right: 0%;
+}
+
+.promo__item {
+  text-align: center;
+}
+
+.promo__icon {
+  width: 42px;
+  margin-bottom: 20px;
+}
+
+.promo__item-text {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.promo__link {
+  margin-top: 8px;
+  display: block;
+  font-size: 16px;
+  color: $white-color;
+  text-transform: lowercase;
+  text-decoration: none;
+  span {
+    text-transform: uppercase;
+    text-decoration: underline;
+  }
+  &:hover {
+    color: inherit;
+  }
+}
