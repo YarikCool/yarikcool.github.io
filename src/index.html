@@ -30,36 +30,28 @@
     <main class="main">
       <section class="promo">
         <div class="container">
-          <h2 class="promo__title">подбор пульсометра</h2>
-          <h3 class="promo__subtitle">с учётом Вашего уровня подготовки</h3>
           <div class="promo__wrapper">
-            <div class="promo__item">
-              <img
-                src="icons/promo/promo__icon1.png"
-                alt="icon1"
-                class="promo__icon"
-              />
-              <div class="promo__item-text">Время подбора: 10 минут</div>
+            <h2 class="promo__title">подбор пульсометра</h2>
+            <h3 class="promo__subtitle">с учётом Вашего уровня подготовки</h3>
+            <div class="promo__icons">
+              <div class="promo__icon">
+                <img src="icons/promo/promo__icon1.png" alt="icon1" />
+                <div class="promo__icon-text">Время подбора: 10 минут</div>
+              </div>
+              <div class="promo__icon">
+                <img src="icons/promo/promo__icon2.png" alt="icon2" />
+                <div class="promo__icon-text">Бесплатная доставка</div>
+              </div>
+              <div class="promo__icon">
+                <img src="icons/promo/promo__icon3.png" alt="icon3" />
+                <div class="promo__icon-text">Ответим на все вопросы</div>
+              </div>
             </div>
-            <div class="promo__item">
-              <img
-                src="icons/promo/promo__icon2.png"
-                alt="icon2"
-                class="promo__icon"
-              />
-              <div class="promo__item-text">Бесплатная доставка</div>
-            </div>
-            <div class="promo__item">
-              <img
-                src="icons/promo/promo__icon3.png"
-                alt="icon3"
-                class="promo__icon"
-              />
-              <div class="promo__item-text">Ответим на все вопросы</div>
+            <button class="btn btn_main">заказать консультацию</button>
+            <div class="promo__link">
+              <span>или</span> <a href="#">перейти в каталог</a>
             </div>
           </div>
-          <button class="btn">заказать консультяцию</button>
-          <a href="#" class="promo__link">или <span>перейти в каталог</span></a>
         </div>
       </section>
       <section class="advantages">
@@ -70,9 +62,9 @@
               <img
                 src="icons/advantages/promo_icon1.png"
                 alt="icon1"
-                class="advantages__icon"
+                class="advantages__item-img"
               />
-              <div class="advantages__item-title">Делимся опытом</div>
+              <h3 class="advantages__item-title">Делимся опытом</h3>
               <div class="advantages__item-text">
                 Наши сотрудники всегда готовы поделиться своим опытом, так как
                 сами бегают полумарафоны, переплыли Босфор, готовятся к
@@ -83,9 +75,9 @@
               <img
                 src="icons/advantages/promo_icon2.png"
                 alt="icon2"
-                class="advantages__icon"
+                class="advantages__item-img"
               />
-              <div class="advantages__item-title">Заботимся о здоровье</div>
+              <h3 class="advantages__item-title">Заботимся о здоровье</h3>
               <div class="advantages__item-text">
                 Мы работаем для того, чтобы Ваши занятия спортом шли на пользу
                 Вашему здоровью и были в радость Вам и Вашим близким!
@@ -95,9 +87,9 @@
               <img
                 src="icons/advantages/promo_icon3.png"
                 alt="icon3"
-                class="advantages__icon"
+                class="advantages__item-img"
               />
-              <div class="advantages__item-title">Учим бегать</div>
+              <h3 class="advantages__item-title">Учим бегать</h3>
               <div class="advantages__item-text">
                 Помогаем с обучением правильной технике бега! Дружим с
                 крупнейшей школой бега -
@@ -105,6 +97,27 @@
               <a href="#" class="advantages__item-link">I LOVE RUNNING.</a>
             </div>
           </div>
+        </div>
+      </section>
+      <section class="consultation">
+        <div class="container">
+          <h2 class="consultation__title">
+            Получите бесплатную консультацию по подбору пульсометра
+          </h2>
+          <div class="consultation__descr">
+            Просто заполните форму заявки и мы перезвоним вам в течении 10 минут
+          </div>
+          <form action="#" class="feed-form">
+            <input required type="text" name="name" placeholder="Ваше имя" />
+            <input required type="tel" name="tel" placeholder="Ваш телефон" />
+            <input
+              required
+              type="email"
+              name="email"
+              placeholder="Ваш E-mail"
+            />
+            <button class="btn btn_main">заказать консультацию</button>
+          </form>
         </div>
       </section>
     </main>

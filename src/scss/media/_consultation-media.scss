@@ -1,0 +1,46 @@
+@media (max-width: 660px) {
+  .consultation__title {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 550px) {
+  .consultation__title {
+    font-size: 27px;
+  }
+  .consultation__descr {
+    font-size: 18px;
+  }
+  .consultation button {
+    font-size: 15px;
+    padding: 13px 40px;
+  }
+}
+
+@media (max-width: 452px) {
+  .consultation {
+    padding: 70px 0 90px;
+  }
+  .consultation__title {
+    font-size: 23px;
+  }
+  .consultation__descr {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 348px) {
+  .consultation__title {
+    font-size: 20px;
+  }
+  .consultation__descr {
+    font-size: 16px;
+  }
+  .consultation form {
+    width: 270px;
+  }
+  .consultation button {
+    font-size: 12px;
+    padding: 11px 40px;
+  }
+} ;

@@ -1,5 +1,7 @@
 .advantages {
   padding: 70px 0 65px;
+  background-color: #f6f6f6;
+  color: #0d0d0d;
 }
 
 .advantages__title {
@@ -13,6 +15,7 @@
 .advantages__wrapper {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   text-align: center;
 }
 
@@ -24,14 +27,14 @@
 
 .advantages__item-text {
   font-size: 14px;
-  width: 265px;
+  max-width: 265px;
   display: block;
 }
 
 .advantages__item-link {
-  color: red;
+  color: #ff0000;
   font-size: 14px;
   &:hover {
-    color: red;
+    color: inherit;
   }
 }
