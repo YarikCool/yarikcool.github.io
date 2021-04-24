@@ -31,7 +31,7 @@
     width: 185px;
   }
   .header__phone {
-    font-size: 13px;
+    font-size: 12px;
   }
   .header__contacts {
     button {
@@ -40,7 +40,7 @@
     }
   }
   .header__official {
-    width: 200px;
+    width: 160px;
     font-size: 9px;
     span {
       font-size: 13px;
@@ -50,7 +50,7 @@
 
 @media (max-width: 488px) {
   .header__official {
-    width: 150px;
+    width: 120px;
     span {
       font-size: 12px;
     }

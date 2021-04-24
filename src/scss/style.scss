@@ -1,6 +1,7 @@
 @import "bootstrap-reboot";
 @import "base/vars";
 @import "base/mixins";
+@import "libs/slick";
 
 .container {
   max-width: 1000px;
@@ -15,4 +16,6 @@
 @import "blocks/promo";
 @import "blocks/advantages";
 @import "blocks/consultation";
+@import "blocks/catalogue";
+@import "blocks/slider";
 @import "media";
