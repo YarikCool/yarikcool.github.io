@@ -1,0 +1,45 @@
+.reviews {
+  padding-bottom: 30px;
+}
+
+.reviews__title {
+  margin-bottom: 60px;
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #0d0d0d;
+}
+
+.reviews__photo {
+  width: 169px;
+  height: 169px;
+}
+
+.reviews__item {
+  display: flex;
+  margin-bottom: 60px;
+}
+
+.reviews__item-title {
+  font-weight: 700;
+  font-size: 18px;
+  color: #0d0d0d;
+}
+
+.review__item-marathons {
+  color: #646464;
+  font-size: 14px;
+}
+
+.reviews__descr {
+  margin-top: 10px;
+  color: #0d0d0d;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.reviews__item-content {
+  max-width: 680px;
+  margin-left: 60px;
+}
