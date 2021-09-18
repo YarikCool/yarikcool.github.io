@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/fonts-icons.css" />
     <link rel="stylesheet" href="css/style.min.css" />
     <title>runSmart</title>
   </head>
@@ -22,7 +23,9 @@
             <a href="tel:+380739228974" class="header__phone">
               +38 (073) 922-89-74
             </a>
-            <button class="btn">заказать звонок</button>
+            <button class="btn" data-modal="consultation">
+              заказать звонок
+            </button>
           </div>
         </div>
       </div>
@@ -47,7 +50,9 @@
                 <div class="promo__icon-text">Ответим на все вопросы</div>
               </div>
             </div>
-            <button class="btn btn_main">заказать консультацию</button>
+            <button class="btn btn_main promo__btn" data-modal="consultation">
+              заказать консультацию
+            </button>
             <div class="promo__link">
               <span>или</span> <a href="#">перейти в каталог</a>
             </div>
@@ -107,15 +112,10 @@
           <div class="consultation__descr">
             Просто заполните форму заявки и мы перезвоним вам в течении 10 минут
           </div>
-          <form action="#" class="feed-form">
-            <input required type="text" name="name" placeholder="Ваше имя" />
-            <input required type="tel" name="tel" placeholder="Ваш телефон" />
-            <input
-              required
-              type="email"
-              name="email"
-              placeholder="Ваш E-mail"
-            />
+          <form action="#" class="feed-form" id="consultation-form">
+            <input type="text" name="name" placeholder="Ваше имя" />
+            <input type="tel" name="tel" placeholder="Ваш телефон" />
+            <input type="email" name="email" placeholder="Ваш E-mail" />
             <button class="btn btn_main">заказать консультацию</button>
           </form>
         </div>
@@ -201,7 +201,7 @@
                     <div>1 950 грн</div>
                     <div>1 750 грн</div>
                   </div>
-                  <button class="btn btn_mini">купить</button>
+                  <button class="btn btn_mini btn_buy">купить</button>
                 </div>
               </div>
               <div class="catalogue__item">
@@ -246,7 +246,7 @@
                     <div>1 110 грн</div>
                     <div>900 грн</div>
                   </div>
-                  <button class="btn btn_mini">купить</button>
+                  <button class="btn btn_mini btn_buy">купить</button>
                 </div>
               </div>
               <div class="catalogue__item">
@@ -291,7 +291,7 @@
                     <div>2 400 грн</div>
                     <div>2 300 грн</div>
                   </div>
-                  <button class="btn btn_mini">купить</button>
+                  <button class="btn btn_mini btn_buy">купить</button>
                 </div>
               </div>
               <div class="catalogue__item">
@@ -336,7 +336,7 @@
                     <div>1 450 грн</div>
                     <div>1 300 грн</div>
                   </div>
-                  <button class="btn btn_mini">купить</button>
+                  <button class="btn btn_mini btn_buy">купить</button>
                 </div>
               </div>
               <div class="catalogue__item">
@@ -381,7 +381,7 @@
                     <div>2 550 грн</div>
                     <div>2 400 грн</div>
                   </div>
-                  <button class="btn btn_mini">купить</button>
+                  <button class="btn btn_mini btn_buy">купить</button>
                 </div>
               </div>
               <div class="catalogue__item">
@@ -426,7 +426,7 @@
                     <div>3 950 грн</div>
                     <div>3 800 грн</div>
                   </div>
-                  <button class="btn btn_mini">купить</button>
+                  <button class="btn btn_mini btn_buy">купить</button>
                 </div>
               </div>
             </div>
@@ -473,7 +473,7 @@
                     <div>1 950 грн</div>
                     <div>1 750 грн</div>
                   </div>
-                  <button class="btn btn_mini">купить</button>
+                  <button class="btn btn_mini btn_buy">купить</button>
                 </div>
               </div>
               <div class="catalogue__item">
@@ -518,7 +518,7 @@
                     <div>1 110 грн</div>
                     <div>900 грн</div>
                   </div>
-                  <button class="btn btn_mini">купить</button>
+                  <button class="btn btn_mini btn_buy">купить</button>
                 </div>
               </div>
               <div class="catalogue__item">
@@ -563,7 +563,7 @@
                     <div>2 400 грн</div>
                     <div>2 300 грн</div>
                   </div>
-                  <button class="btn btn_mini">купить</button>
+                  <button class="btn btn_mini btn_buy">купить</button>
                 </div>
               </div>
             </div>
@@ -610,7 +610,7 @@
                     <div>1 450 грн</div>
                     <div>1 300 грн</div>
                   </div>
-                  <button class="btn btn_mini">купить</button>
+                  <button class="btn btn_mini btn_buy">купить</button>
                 </div>
               </div>
               <div class="catalogue__item">
@@ -655,7 +655,7 @@
                     <div>2 550 грн</div>
                     <div>2 400 грн</div>
                   </div>
-                  <button class="btn btn_mini">купить</button>
+                  <button class="btn btn_mini btn_buy">купить</button>
                 </div>
               </div>
               <div class="catalogue__item">
@@ -700,7 +700,7 @@
                     <div>3 950 грн</div>
                     <div>3 800 грн</div>
                   </div>
-                  <button class="btn btn_mini">купить</button>
+                  <button class="btn btn_mini btn_buy">купить</button>
                 </div>
               </div>
             </div>
@@ -788,8 +788,75 @@
           </div>
         </div>
       </section>
+      <section class="footer">
+        <div class="footer__information">
+          <address class="footer__address">
+            Киев, Лабораторный проулок 7А
+          </address>
+          <a href="tel:+380739228974" class="footer__phone"
+            >+38 (073) 922-89-74</a
+          >
+          <div class="footer__icons-wrapper">
+            <a href="#" class="footer__icon-holder">
+              <span class="icon-facebook footer__icon"></span>
+            </a>
+            <a href="#" class="footer__icon-holder">
+              <span class="icon-instagram footer__icon"></span>
+            </a>
+            <a href="#" class="footer__icon-holder">
+              <span class="icon-pinterest2 footer__icon"></span>
+            </a>
+          </div>
+        </div>
+        <div class="footer__map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.671169407941!2d30.52539131525564!3d50.42859797947242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf1ad99801df%3A0x92b77b6c451ab670!2sLaboratornyi%20Ln%2C%207%D0%90%2C%20Kyiv%2C%20Ukrajina%2C%2002000!5e0!3m2!1ssk!2ssk!4v1620501612687!5m2!1ssk!2ssk"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+      </section>
     </main>
+    <div class="overlay">
+      <div class="modal" id="consultation">
+        <div class="modal__close">&times;</div>
+        <h3 class="modal__title">Просто заполните форму заявки</h3>
+        <p class="modal__descr">и мы перезвоним вам в течении 10 минут</p>
+        <form action="#" class="feed-form">
+          <input type="text" name="name" placeholder="Ваше имя" />
+          <input type="tel" name="tel" placeholder="Ваш телефон" />
+          <input type="email" name="email" placeholder="Ваш E-mail" />
+          <button class="btn btn_main modal__consultaion-btn">
+            заказать консультацию
+          </button>
+        </form>
+      </div>
+      <div class="modal" id="order">
+        <div class="modal__close">&times;</div>
+        <h3 class="modal__title">Ваш заказ:</h3>
+        <p class="modal__descr">Пульсометр Polar FT1</p>
+        <form action="#" class="feed-form">
+          <input type="text" name="name" placeholder="Ваше имя" />
+          <input type="tel" name="tel" placeholder="Ваш телефон" />
+          <input type="email" name="email" placeholder="Ваш E-mail" />
+          <button class="btn btn_main modal__order-btn">купить</button>
+        </form>
+      </div>
+      <div class="modal" id="thanks">
+        <div class="modal__close">&times;</div>
+        <h3 class="modal__title">Спасибо за вашу заявку!</h3>
+        <p class="modal__descr">
+          Наш менеджер свяжется с вами в ближайшее время!
+        </p>
+      </div>
+      <!--      <div class="modal"></div>
+      <div class="modal"></div> -->
+    </div>
+
     <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/script.js"></script>
   </body>
